@@ -1,0 +1,15 @@
+Zpracování obrazu pomocí 2D konvoluce
+Zadání:
+
+Pomocí jazyka C/C++, CUDA API a vhodných vývojových nástrojů (NVIDIA NSight, CodeLite+SSH,...) vytvořte aplikaci umožňující provádět vybrané operace nad 2D obrazem (rozostření, detekce hran, ...) pomocí algoritmu diskrétní 2D konvoluce.
+Volte 3-kanálový (R,G,B) triviální algoritmus s optimalizací přístupů do globální paměti pomocí využití sdílené paměti.
+Jako zdroj dat použijte libovolný vhodný obrázek ve formátu PNG. Modifikovaný výstup ukládejte ve stejném formátu. Pro přesun obrázků mezi lokální pracovní stanicí a výpočetním GPU serverem použijte možnosti CUDA Online IDE, nástroj git integrovaný do IDE NSight nebo manuální kopírování pomocí SSH/SCP.
+Pro přístup k jednotlivým barevným kanálům obrázku (R,G,B) použijte knihovnu libpng++ (viz. Utility) popřípadě třídy wxImage (popř. wxBitmap) knihovny wxWidgets, nebo jiné podobné,
+Ověřte funkcionalitu na vzdáleném překladovém serveru a GPGPU Tesla K40.
+Tipy pro řešení:
+
+Aplikaci implementujte s konzolovým UI.
+Soubory *.cu musí obsahovat pouze obecný a CUDA kód. Volání wxWidgets API musí být v souborech s příponou *.cpp.
+Pokud není na virtuální stanici s Ubuntu instalována knihovna libpng++, nainstalujte ji pomocí příkazu apt-get install libpng++-dev
+Pokud není na virtuální stanici s Ubuntu instalována knihovna wxWidgets (test pomocí wx-config --list), nainstalujte ji pomocí příkazu sudo apt-get install libwxgtk3.0-dev. 
+Doporučuji použít libpng++, protože knihovna wxWidgets požaduje instalaci kompletního X11 serveru (více než 400 MB dat na disku) kdežto libpng++ je bez závislotí na zobrazovacím serveru a zabere cca 400 kB na disku.

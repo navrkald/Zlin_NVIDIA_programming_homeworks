@@ -1,0 +1,7 @@
+Součet vektorů pomocí CUDA API.
+Zadání:
+
+Pomocí jazyka C/C++, CUDA API a vhodných vývojových nástrojů (CUDA Online IDE, NVIDIA NSight, CodeLite+SSH,...) vytvořte aplikaci implementující paralelní součet prvků dvou vektorů o velikosti n inicializovaných na hodnoty 1 - n. Hodnotu n volte v řádech stovek až tisíců.
+Ověřte funkcionalitu na vzdáleném překladovém serveru a GPGPU Tesla K40.
+Otestujte možnosti debuggingu CUDA kernelů, tj. vložení breakpointu do kernelu a jeho krokování (vyžaduje IDE NSight a dodatečnou grafickou kartu).
+Otestujte možnosti profilingu CUDA kernelů, tj. spuštění vzdálené aplikace v prostředí NSight Visual Profiler (vyžaduje IDE NSight).

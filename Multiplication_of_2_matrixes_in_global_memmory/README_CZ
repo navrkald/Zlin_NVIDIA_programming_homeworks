@@ -1,0 +1,7 @@
+Násobení matic v globální paměti
+Zadání:
+
+Pomocí jazyka C/C++, CUDA API a vhodných vývojových nástrojů (CUDA Online IDE, NVIDIA NSight, CodeLite+SSH,...) vytvořte aplikaci implementující paralelní násobení matic A a B o vhodné velikosti inicializovaných lexikograficky na hodnoty 1 - n, kde n je celkový počet prvků matice.
+Volte triviální algoritmus bez optimalizace přístupů do globální paměti pomocí využití sdílené paměti.
+Ověřte funkcionalitu na vzdáleném překladovém serveru a GPGPU Tesla K40.
+Správnost výpočtu ověřte pomocí vhodného SW/nástroje (Matlab, SciLab, Octave, ...).
